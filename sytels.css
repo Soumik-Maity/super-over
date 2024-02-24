@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+.container-background {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(5px);
+  z-index: -2;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+.header-image {
+  position: relative;
+  top: 10px;
+  left: 42%;
+
+  z-index: 1;
+}
+
+.country {
+  width: 30%;
+  height: 40vh;
+  z-index: 2;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  margin: 30px;
+  margin-top: 50px;
+}
+.india {
+  background-color: rgb(57, 57, 138);
+}
+.pak {
+  background-color: green;
+}
+.country h1 {
+  font-size: 80px;
+  font-weight: 800;
+}
+.over {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.ball {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px;
+  color: black;
+  z-index: 4;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.total {
+  animation: total 2s infinite ease-in;
+  font-size: 50px;
+}
+footer {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  max-width: 170px;
+  max-height: 170px;
+  margin: 15px;
+}
