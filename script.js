@@ -29,11 +29,35 @@ function play() {
     present_run2 = present_run2 + new_run;
     pakTotalEl.innerText = present_run2 + "/" + present_wicket2;
   }
+  check();
 }
+function check() {
+  if (present_run2 > present_run) {
+    window.alert("Pakistan won the match");
+  }
+  if (i == 12) {
+    return gameOver();
+  }
+  if (present_wicket == 2 && i < 6) {
+    i = 6;
+  }
+  if (present_wicket2 == 2) {
+    window.alert("India won the match");
+  }
+}
+
 function gameOver() {
-  window.alert("Game Over!");
+  if (present_run > present_run2) {
+    window.alert("India won the match");
+  } else {
+    window.alert("Pakistan won the match");
+  }
+
   buttonEl.disabled = true;
 }
 function genRandom() {
   return Math.floor(Math.random() * (7 - 0));
+}
+function refreshPage() {
+  window.location.reload();
 }
